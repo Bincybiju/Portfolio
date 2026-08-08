@@ -1,532 +1,2120 @@
 <!DOCTYPE HTML>
+
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bincy portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/style.css">
-
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Bincy portfolio</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Bincy Biju - .NET Developer specializing in C#, ASP.NET Core, Web API, Entity Framework Core, SQL Server and enterprise application development." name="description">
+<meta content="Bincy Biju, .NET Developer, C#, ASP.NET Core, Web API, Entity Framework Core, SQL Server, Full Stack Developer" name="keywords">
+<meta content="Bincy Biju" name="author">
+<!-- Facebook and Twitter integration -->
+<meta content="" property="og:title"/>
+<meta content="" property="og:image"/>
+<meta content="" property="og:url"/>
+<meta content="" property="og:site_name"/>
+<meta content="" property="og:description"/>
+<meta content="" name="twitter:title"/>
+<meta content="" name="twitter:image"/>
+<meta content="" name="twitter:url"/>
+<meta content="" name="twitter:card"/>
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet"/>
+<!-- Animate.css -->
+<link href="css/animate.css" rel="stylesheet"/>
+<!-- Icomoon Icon Fonts-->
+<link href="css/icomoon.css" rel="stylesheet"/>
+<!-- Bootstrap  -->
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<!-- Owl Carousel -->
+<link href="css/owl.carousel.min.css" rel="stylesheet"/>
+<link href="css/owl.theme.default.min.css" rel="stylesheet"/>
+<!-- Magnific Popup -->
+<link href="css/magnific-popup.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+</meta></meta></meta>
+<style>
+:root{
+ --primary:#2c98f0;--primary2:#5bb5f5;--dark:#17212b;--text:#2b333b;
+ --muted:#7d8791;--line:#e8edf2;--soft:#f6f9fc;--white:#fff;
+ --shadow:0 12px 35px rgba(20,35,50,.07);--shadow2:0 22px 55px rgba(20,35,50,.13);
+}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--text);font-family:"Karla",Arial,sans-serif}
+a{transition:.25s ease}
+::selection{background:var(--primary);color:#fff}
+.colorlib-nav-toggle{z-index:1005}
+.fixed-header{position:fixed;top:0;left:0;width:100%;z-index:1000}
+.intro-heading span,.section-kicker{display:inline-block;color:var(--primary);font-size:10px;font-weight:700;letter-spacing:2.8px;text-transform:uppercase;margin-bottom:8px}
+.intro-heading h2{margin-bottom:10px}
+.intro-heading p{max-width:680px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.85}
+#colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{position:relative;overflow:hidden}
+#colorlib-services,#colorlib-blog{background:linear-gradient(180deg,#fbfcfe 0%,#fff 100%)}
 
-	</head>
-	<style>
-	.certificate-item {
+/* HERO / ABOUT */
+#colorlib-about{padding-top:55px}
+.about-img{border-radius:22px;box-shadow:0 25px 65px rgba(0,0,0,.13);transition:.4s}
+.about-img:hover{transform:translateY(-6px)}
+.about-desc .desc p{font-size:14px;line-height:1.95;color:#6f7982}
+.about-desc h2 span{display:block}
+.about-desc h2 span:last-child{color:var(--primary)}
+.colorlib-social-icons a{display:inline-flex!important;align-items:center;justify-content:center;width:42px;height:42px;margin-right:7px;border:1px solid var(--line);border-radius:50%;background:#fff;color:#555;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+.colorlib-social-icons a:hover{background:var(--primary);border-color:var(--primary);color:#fff;transform:translateY(-3px)}
+.btn-primary{background:var(--primary);border-color:var(--primary)}
+.btn-primary:hover{background:#167ec9;border-color:#167ec9}
+.btn-outline{border-width:1px}
+
+/* SKILLS */
+#colorlib-services{padding-bottom:85px}
+.skills-grid{display:flex;flex-wrap:wrap;margin:0 -12px}
+.skills-grid>[class*=col-]{padding:12px;display:flex}
+.tech-card{position:relative;width:100%;min-height:295px;padding:30px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden;transition:.35s}
+.tech-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--primary),transparent)}
+.tech-card:after{content:"";position:absolute;width:170px;height:170px;right:-85px;top:-85px;border-radius:50%;background:rgba(44,152,240,.055);transition:.5s}
+.tech-card:hover{transform:translateY(-8px);box-shadow:var(--shadow2);border-color:rgba(44,152,240,.28)}
+.tech-card:hover:after{transform:scale(2)}
+.tech-card-header{position:relative;z-index:2;display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.tech-icon{width:60px;height:60px;min-width:60px;display:flex;align-items:center;justify-content:center;border-radius:15px;background:rgba(44,152,240,.1);color:var(--primary);font-size:16px;font-weight:700;transition:.35s}
+.tech-icon i{font-size:25px}
+.tech-card:hover .tech-icon{background:var(--primary);color:#fff;transform:rotate(-4deg) scale(1.06)}
+.tech-card-header h4{margin:0 0 5px;font-size:19px;font-weight:600;color:#252a2f}
+.tech-card-header p{margin:0;color:#929aa2;font-size:12px}
+.tech-list{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:9px}
+.tech-list span{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#f8fafc;color:#59636c;font-size:12px;font-weight:500;transition:.25s}
+.tech-list span:hover{background:var(--primary);border-color:var(--primary);color:#fff;transform:translateY(-2px)}
+
+/* PROJECTS */
+#colorlib-work{padding-bottom:90px}
+.project-intro{max-width:650px;margin:12px auto 50px;color:var(--muted);font-size:14px;line-height:1.85}
+.project-row{display:flex;align-items:center;margin-bottom:90px}
+.project-image{height:390px;position:relative;overflow:hidden;border-radius:22px;background-size:cover;background-position:center;box-shadow:0 20px 55px rgba(0,0,0,.12);transition:.4s}
+.project-image:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,30,50,.08),rgba(8,30,50,.76))}
+.project-image:hover{transform:translateY(-8px);box-shadow:0 28px 65px rgba(0,0,0,.17)}
+.project-image-overlay{position:absolute;z-index:2;left:30px;right:20px;bottom:28px;color:#fff}
+.project-image-overlay span{display:block;margin-bottom:7px;font-size:10px;letter-spacing:3px;opacity:.75}
+.project-image-overlay h3{margin:0;color:#fff;font-size:27px;font-weight:600}
+.project-content{padding:10px 35px}
+.project-number{margin-bottom:9px;color:var(--primary);font-size:10px;font-weight:700;letter-spacing:2.5px}
+.project-content h2{margin:0 0 15px;color:#252a2f;font-size:28px;line-height:1.35;font-weight:600}
+.project-description{color:#737d86;font-size:13px;line-height:1.9;margin-bottom:20px}
+.project-tech{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.project-tech span{padding:6px 10px;border:1px solid #e5ebf1;border-radius:6px;background:#f6f9fb;color:#5b646d;font-size:10px;font-weight:600}
+.project-highlights{display:grid;grid-template-columns:1fr 1fr;gap:11px 18px}
+.highlight-item{display:flex;gap:8px;color:#59626b;font-size:12px}
+.highlight-item i{color:var(--primary);margin-top:2px}
+
+/* CERTIFICATIONS */
+#colorlib-blog{padding-bottom:90px}
+.certificate-intro{max-width:620px;margin:10px auto 35px;color:var(--muted);font-size:14px;line-height:1.8}
+.certificate-card{position:relative;display:flex;align-items:center;min-height:235px;margin:15px 8px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden;transition:.35s}
+.certificate-card:after{content:"";position:absolute;width:160px;height:160px;right:-80px;top:-80px;border-radius:50%;background:rgba(44,152,240,.05);transition:.45s}
+.certificate-card:hover{transform:translateY(-7px);box-shadow:var(--shadow2);border-color:rgba(44,152,240,.28)}
+.certificate-card:hover:after{transform:scale(2)}
+.certificate-logo{position:relative;z-index:2;width:110px;height:110px;min-width:110px;display:flex;align-items:center;justify-content:center;padding:14px;margin-right:25px;background:#f7f9fb;border:1px solid var(--line);border-radius:16px}
+.certificate-img{max-width:100%;max-height:82px;object-fit:contain}
+.certificate-content{position:relative;z-index:2;flex:1}
+.certificate-label{display:inline-block;margin-bottom:8px;color:var(--primary);font-size:9px;font-weight:700;letter-spacing:2px}
+.certificate-content h3{margin:0 0 6px;font-size:20px;line-height:1.35;font-weight:600;color:#25292e}
+.certificate-provider{margin:0 0 20px;color:#858e97;font-size:13px}
+.certificate-footer{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.certificate-type{color:#9aa1a8;font-size:10px}
+.certificate-type i{margin-right:4px;color:var(--primary)}
+.certificate-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:7px;background:var(--primary);color:#fff!important;font-size:10px;font-weight:600;text-decoration:none!important}
+.certificate-btn:hover{background:#187fc9;transform:translateX(3px)}
+.owl-carousel1 .owl-item{padding:5px}.owl-carousel1 .owl-dots{margin-top:20px;text-align:center}.owl-carousel1 .owl-dot{display:inline-block;margin:0 4px}.owl-carousel1 .owl-dot span{display:block;width:8px;height:8px;border-radius:50%;background:#dce3e9;transition:.25s}.owl-carousel1 .owl-dot.active span{width:24px;border-radius:10px;background:var(--primary)}
+
+/* CONTACT */
+#colorlib-contact{padding-bottom:100px}
+.contact-intro{max-width:650px;margin:12px auto 40px;color:var(--muted);font-size:14px;line-height:1.8}
+.contact-card{display:flex;align-items:center;padding:19px;margin-bottom:14px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,.04);transition:.3s}
+.contact-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,0,0,.08);border-color:rgba(44,152,240,.28)}
+.contact-card-icon{width:50px;height:50px;min-width:50px;display:flex;align-items:center;justify-content:center;margin-right:15px;border-radius:12px;background:rgba(44,152,240,.09);color:var(--primary)}
+.contact-card:hover .contact-card-icon{background:var(--primary);color:#fff;transform:scale(1.05)}
+.contact-card-content span{display:block;margin-bottom:4px;color:#9aa1a8;font-size:9px;font-weight:700;letter-spacing:1.7px;text-transform:uppercase}
+.contact-card-content a,.contact-card-content p{margin:0;color:#333;font-size:13px;line-height:1.5;text-decoration:none;word-break:break-word}
+.contact-card-content a:hover{color:var(--primary)}
+.contact-availability{display:flex;gap:12px;padding:19px;margin-top:20px;background:#f5faff;border:1px solid #e2eff9;border-radius:15px}
+.availability-dot{width:9px;height:9px;min-width:9px;margin-top:5px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 5px rgba(44,152,240,.1)}
+.contact-availability strong{display:block;margin-bottom:5px;color:#333;font-size:12px}.contact-availability p{margin:0;color:#888;font-size:11px;line-height:1.6}
+.contact-form-card{position:relative;padding:34px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.055);overflow:hidden}
+.contact-form-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--primary),rgba(44,152,240,0))}
+.contact-form-header{position:relative;z-index:2;margin-bottom:27px}
+.contact-form-header span{display:block;margin-bottom:7px;color:var(--primary);font-size:9px;font-weight:700;letter-spacing:2px}
+.contact-form-header h3{margin:0 0 7px;color:#25292e;font-size:24px;font-weight:600}
+.contact-form-header p{margin:0;color:#888;font-size:12px;line-height:1.7}
+.modern-form-group{position:relative;z-index:2;margin-bottom:18px}.modern-form-group label{display:block;margin-bottom:7px;color:#555;font-size:11px;font-weight:600}
+.modern-form-control{width:100%;height:46px;padding:11px 14px;background:#f8fafc;border:1px solid #e4e9ee;border-radius:8px;outline:none;font-family:inherit;font-size:12px;color:#333;transition:.25s}
+.modern-form-control:focus{background:#fff;border-color:var(--primary);box-shadow:0 0 0 3px rgba(44,152,240,.08)}
+.modern-textarea{height:auto;min-height:135px;resize:vertical}
+.modern-submit-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 20px;border:0;border-radius:8px;background:var(--primary);color:#fff;font-size:11px;font-weight:600;cursor:pointer;transition:.3s;box-shadow:0 8px 20px rgba(44,152,240,.18)}
+.modern-submit-btn:hover{background:#187fc9;color:#fff;transform:translateY(-2px);box-shadow:0 12px 25px rgba(44,152,240,.25)}
+.modern-submit-btn i{transition:.25s}.modern-submit-btn:hover i{transform:translateX(4px)}
+.portfolio-footer{padding:25px 15px 35px;text-align:center;color:#9aa1a8;font-size:11px}
+
+/* Responsive */
+@media(max-width:991px){
+ .project-row{display:block;margin-bottom:60px}.project-image{height:310px;margin-bottom:25px}.project-content{padding:10px 15px}.project-row-reverse{display:flex;flex-direction:column}.project-row-reverse .col-md-push-7,.project-row-reverse .col-md-pull-5{left:auto;right:auto}.contact-form-card{margin-top:30px}
+}
+@media(max-width:767px){
+ #colorlib-about{padding-top:20px}.skills-grid{display:block;margin:0}.skills-grid>[class*=col-]{padding:0;margin-bottom:18px}.tech-card{min-height:auto;padding:24px}.tech-icon{width:52px;height:52px;min-width:52px}.tech-list span{font-size:11px;padding:7px 10px}
+ .project-image{height:255px;border-radius:15px}.project-content h2{font-size:22px}.project-highlights{grid-template-columns:1fr}.certificate-card{display:block;min-height:auto;padding:24px;text-align:center}.certificate-logo{margin:0 auto 18px;width:95px;height:95px;min-width:95px}.certificate-footer{display:block}.certificate-type{display:block;margin-bottom:13px}.certificate-btn{justify-content:center}.contact-card{padding:17px}.contact-form-card{padding:27px 20px;border-radius:16px}.contact-form-header h3{font-size:21px}.modern-submit-btn{width:100%}
+}
+</style>
+
+
+
+
+<style id="clean-professional-redesign">
+/* =========================================================
+   CLEAN PROFESSIONAL PORTFOLIO — LIGHT / RESPONSIVE
+========================================================= */
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --primary-soft:#eff6ff;
+  --ink:#172033;
+  --text:#445066;
+  --muted:#7b879a;
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --line:#e6eaf0;
+  --shadow:0 14px 40px rgba(30,45,70,.08);
+  --shadow-hover:0 22px 55px rgba(30,45,70,.13);
+}
+
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg)!important;
+  color:var(--text)!important;
+  font-family:"Inter","Poppins","Segoe UI",Arial,sans-serif!important;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+#colorlib-page,#colorlib-main{background:var(--bg)!important}
+
+/* ---------- Navigation ---------- */
+.colorlib-nav{
+  background:#fff!important;
+  border-right:1px solid var(--line)!important;
+  box-shadow:4px 0 24px rgba(30,45,70,.04);
+}
+.colorlib-nav a{
+  color:#68758a!important;
+  transition:.25s ease;
+}
+.colorlib-nav a:hover,
+.colorlib-nav .active a{
+  color:var(--primary)!important;
+}
+
+/* ---------- Hero ---------- */
+#colorlib-hero{
+  min-height:100vh!important;
+  background:
+    radial-gradient(circle at 78% 20%,rgba(37,99,235,.12),transparent 28%),
+    radial-gradient(circle at 15% 80%,rgba(99,102,241,.08),transparent 25%),
+    #f8faff!important;
+}
+#colorlib-hero .overlay{background:transparent!important}
+#colorlib-hero h1{
+  color:var(--ink)!important;
+  font-weight:800!important;
+  letter-spacing:-.045em!important;
+}
+#colorlib-hero h2,
+#colorlib-hero p{color:var(--text)!important}
+#colorlib-hero .btn{
+  border-radius:8px!important;
+  box-shadow:0 9px 22px rgba(37,99,235,.16);
+}
+.btn-primary,.custom-primary{
+  background:var(--primary)!important;
+  border-color:var(--primary)!important;
+  color:#fff!important;
+  border-radius:8px!important;
+}
+.btn-primary:hover,.custom-primary:hover{
+  background:var(--primary-dark)!important;
+  border-color:var(--primary-dark)!important;
+}
+
+/* ---------- Sections ---------- */
+#colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{
+  position:relative;
+  padding:105px 0!important;
+}
+#colorlib-about:before,
+#colorlib-services:before,
+#colorlib-work:before,
+#colorlib-blog:before,
+#colorlib-contact:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:min(1120px,88%);
+  height:1px;
+  background:var(--line);
+}
+.bold{
+  color:rgba(23,32,51,.035)!important;
+  font-size:105px!important;
+  font-weight:800!important;
+}
+.intro-heading span{
+  color:var(--primary)!important;
+  font-size:11px!important;
+  font-weight:700!important;
+  letter-spacing:.18em!important;
+}
+.intro-heading h2{
+  color:var(--ink)!important;
+  font-weight:750!important;
+  letter-spacing:-.035em!important;
+}
+.rotate .heading{
+  color:rgba(23,32,51,.045)!important;
+}
+
+/* ---------- Global cards ---------- */
+.skill-card,.tech-card,.certificate-card,
+.contact-info-card,.contact-form-card,
+.article,.work-entry .desc{
+  background:var(--card)!important;
+  border:1px solid var(--line)!important;
+  border-radius:18px!important;
+  box-shadow:var(--shadow)!important;
+}
+.skill-card,.tech-card,.certificate-card,.contact-info-card{
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.skill-card:hover,.tech-card:hover,.certificate-card:hover,.contact-info-card:hover{
+  transform:translateY(-6px);
+  border-color:#cbd8ef!important;
+  box-shadow:var(--shadow-hover)!important;
+}
+
+/* ---------- Skills ---------- */
+.skill-tags span,.tech-list span{
+  background:#f8fafc!important;
+  border:1px solid #e3e8ef!important;
+  color:#4c596d!important;
+  border-radius:7px!important;
+}
+.skill-tags span:hover,.tech-list span:hover{
+  background:var(--primary)!important;
+  border-color:var(--primary)!important;
+  color:#fff!important;
+}
+.tech-icon{
+  background:var(--primary-soft)!important;
+  color:var(--primary)!important;
+}
+.tech-card:hover .tech-icon{
+  background:var(--primary)!important;
+  color:#fff!important;
+}
+
+/* ---------- Projects ---------- */
+.work-entry .work-img{
+  border-radius:18px!important;
+  overflow:hidden;
+  border:1px solid var(--line)!important;
+  box-shadow:var(--shadow)!important;
+}
+.work-entry .desc{
+  padding:28px!important;
+  color:var(--text)!important;
+}
+.work-entry .desc p{color:var(--text)!important}
+.work-entry .desc b{color:var(--ink)!important}
+
+/* ---------- Certifications ---------- */
+.certificate-card{min-height:220px}
+.certificate-card h3,
+.certificate-details h2{color:var(--ink)!important}
+.certificate-provider,
+.certificate-details p{color:var(--muted)!important}
+
+/* ---------- Contact ---------- */
+.contact-info-content span{color:#8994a6!important}
+.contact-info-content a,
+.contact-info-content p{color:var(--ink)!important}
+.contact-form-card{padding:34px!important}
+.modern-form-control{
+  background:#fbfcfe!important;
+  color:var(--ink)!important;
+  border:1px solid #dfe5ed!important;
+  border-radius:9px!important;
+}
+.modern-form-control::placeholder{color:#a0a9b6!important}
+.modern-form-control:focus{
+  background:#fff!important;
+  border-color:var(--primary)!important;
+  box-shadow:0 0 0 3px rgba(37,99,235,.08)!important;
+}
+.modern-form-group label{color:#566276!important}
+.modern-submit-btn{
+  background:var(--primary)!important;
+  color:#fff!important;
+  border-radius:8px!important;
+}
+.modern-submit-btn:hover{background:var(--primary-dark)!important}
+
+/* ---------- Readability fixes ---------- */
+p,li{color:var(--text)}
+h1,h2,h3,h4,h5,h6{color:var(--ink)}
+a{color:var(--primary)}
+a:hover{color:var(--primary-dark)}
+.section-kicker{
+  display:inline-block;
+  padding:6px 11px;
+  border-radius:999px;
+  color:var(--primary);
+  background:var(--primary-soft);
+  border:1px solid #dbeafe;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.14em;
+}
+
+/* ---------- Better alignment ---------- */
+.container{position:relative;z-index:2}
+.row{margin-left:-12px;margin-right:-12px}
+[class*="col-"]{padding-left:12px;padding-right:12px}
+.contact-main-row,.contact-wrapper{display:flex;align-items:stretch}
+.contact-info-wrapper{height:100%}
+.contact-form-card{height:100%}
+
+/* ---------- Tablet ---------- */
+@media (max-width:991px){
+  #colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{
+    padding:82px 0!important;
+  }
+  .contact-main-row,.contact-wrapper{display:block}
+  .contact-form-card{margin-top:28px}
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width:767px){
+  #colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{
+    padding:70px 0!important;
+  }
+  .bold{
+    font-size:58px!important;
+  }
+  .intro-heading h2{
+    font-size:28px!important;
+  }
+  .intro-heading span{
+    font-size:9px!important;
+  }
+  .container{
+    width:100%!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+  .row{
+    margin-left:-8px;
+    margin-right:-8px;
+  }
+  [class*="col-"]{
+    padding-left:8px;
+    padding-right:8px;
+  }
+  .contact-form-card{
+    padding:24px 18px!important;
+    border-radius:15px!important;
+  }
+  .modern-submit-btn{
+    width:100%;
+  }
+  .certificate-card{
+    min-height:auto;
+  }
+  #colorlib-hero h1{
+    font-size:38px!important;
+  }
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width:480px){
+  .bold{font-size:45px!important}
+  .intro-heading h2{font-size:25px!important}
+  #colorlib-hero h1{font-size:32px!important}
+}
+</style>
+
+
+<style id="executive-portfolio-design">
+/* =========================================================
+   EXECUTIVE .NET DEVELOPER PORTFOLIO
+   Recruiter-first hierarchy • clean light UI • responsive
+========================================================= */
+:root{
+  --p:#1f6feb;
+  --p2:#1558bd;
+  --ink:#152238;
+  --body:#536174;
+  --muted:#7d899a;
+  --bg:#f5f7fb;
+  --card:#fff;
+  --line:#e5eaf1;
+  --soft:#eef5ff;
+  --radius:18px;
+  --shadow:0 12px 38px rgba(24,42,70,.07);
+  --shadow2:0 22px 55px rgba(24,42,70,.11);
+}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg)!important;
+  color:var(--body)!important;
+  font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif!important;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,h5,h6{color:var(--ink)!important}
+p,li{color:var(--body)}
+a{color:var(--p);transition:.25s ease}
+a:hover{color:var(--p2)}
+.container{position:relative;z-index:2}
+.colorlib-nav{
+  background:#fff!important;
+  border-right:1px solid var(--line)!important;
+  box-shadow:5px 0 28px rgba(20,35,60,.04);
+}
+.colorlib-nav a{color:#667388!important}
+.colorlib-nav a:hover,.colorlib-nav .active a{color:var(--p)!important}
+
+/* Hero: strongest first impression */
+#colorlib-hero{
+  min-height:100vh!important;
+  background:
+    linear-gradient(120deg,rgba(255,255,255,.97),rgba(246,250,255,.95)),
+    radial-gradient(circle at 85% 20%,rgba(31,111,235,.16),transparent 32%)!important;
+}
+#colorlib-hero .overlay{background:transparent!important}
+#colorlib-hero h1{
+  color:var(--ink)!important;
+  font-weight:800!important;
+  letter-spacing:-.055em!important;
+}
+#colorlib-hero h2{color:#435168!important}
+#colorlib-hero p{color:#667388!important}
+#colorlib-hero .btn,
+.btn-primary,.custom-primary{
+  border-radius:9px!important;
+  background:var(--p)!important;
+  border-color:var(--p)!important;
+  color:#fff!important;
+  box-shadow:0 10px 25px rgba(31,111,235,.18);
+}
+#colorlib-hero .btn:hover,.btn-primary:hover,.custom-primary:hover{
+  background:var(--p2)!important;
+  border-color:var(--p2)!important;
+  transform:translateY(-2px);
+}
+
+/* Proof bar */
+.portfolio-order-note{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+.portfolio-proof-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  min-height:94px;
+  align-items:center;
+}
+.portfolio-proof-row>div{
+  padding:10px 25px;
+  border-right:1px solid var(--line);
+}
+.portfolio-proof-row>div:last-child{border-right:0}
+.portfolio-proof-row strong{
+  display:block;
+  color:var(--ink);
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:-.03em;
+}
+.portfolio-proof-row span{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  margin-top:2px;
+}
+
+/* Section rhythm */
+#colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{
+  padding:105px 0!important;
+  position:relative;
+}
+#colorlib-about:before,#colorlib-services:before,#colorlib-work:before,
+#colorlib-blog:before,#colorlib-contact:before{
+  content:"";
+  position:absolute;
+  top:0;left:50%;transform:translateX(-50%);
+  width:min(1120px,88%);
+  height:1px;background:var(--line);
+}
+.bold{
+  color:rgba(21,34,56,.035)!important;
+  font-size:108px!important;
+  font-weight:850!important;
+}
+.intro-heading span{
+  color:var(--p)!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  letter-spacing:.2em!important;
+}
+.intro-heading h2{
+  font-size:34px!important;
+  font-weight:780!important;
+  letter-spacing:-.04em!important;
+}
+.rotate .heading{color:rgba(21,34,56,.045)!important}
+
+/* Cards */
+.skill-card,.tech-card,.certificate-card,.contact-info-card,
+.contact-form-card,.article,.work-entry .desc{
+  background:var(--card)!important;
+  border:1px solid var(--line)!important;
+  border-radius:var(--radius)!important;
+  box-shadow:var(--shadow)!important;
+}
+.skill-card,.tech-card,.certificate-card,.contact-info-card{
+  transition:.3s ease;
+}
+.skill-card:hover,.tech-card:hover,.certificate-card:hover,.contact-info-card:hover{
+  transform:translateY(-6px);
+  border-color:#c9d8ef!important;
+  box-shadow:var(--shadow2)!important;
+}
+.skill-tags span,.tech-list span{
+  background:#f7f9fc!important;
+  border:1px solid #e3e8ef!important;
+  color:#4c596b!important;
+  border-radius:7px!important;
+}
+.skill-tags span:hover,.tech-list span:hover{
+  background:var(--p)!important;
+  border-color:var(--p)!important;
+  color:#fff!important;
+}
+
+/* Projects: make them visually dominant */
+.work-entry{margin-bottom:75px!important}
+.work-entry .work-img{
+  border:1px solid var(--line)!important;
+  border-radius:20px!important;
+  overflow:hidden;
+  box-shadow:var(--shadow2)!important;
+}
+.work-entry .desc{
+  padding:30px!important;
+  margin-top:-5px;
+  position:relative;
+}
+.work-entry .desc p{color:var(--body)!important}
+.work-entry .desc b{color:var(--ink)!important}
+
+/* Certificates */
+.certificate-card{min-height:215px}
+.certificate-card h3,.certificate-details h2{color:var(--ink)!important}
+.certificate-card p,.certificate-details p{color:var(--muted)!important}
+
+/* Contact */
+.contact-info-content span{color:#8995a7!important}
+.contact-info-content a,.contact-info-content p{color:var(--ink)!important}
+.contact-form-card{padding:36px!important}
+.modern-form-control{
+  background:#fbfcfe!important;
+  color:var(--ink)!important;
+  border:1px solid #dfe5ed!important;
+  border-radius:9px!important;
+}
+.modern-form-control:focus{
+  background:#fff!important;
+  border-color:var(--p)!important;
+  box-shadow:0 0 0 3px rgba(31,111,235,.08)!important;
+}
+.modern-form-group label{color:#536074!important}
+.modern-submit-btn{
+  background:var(--p)!important;color:#fff!important;border-radius:9px!important;
+}
+.modern-submit-btn:hover{background:var(--p2)!important}
+
+/* Responsive */
+@media(max-width:991px){
+  #colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{
+    padding:82px 0!important;
+  }
+  .portfolio-proof-row{grid-template-columns:repeat(2,1fr)}
+  .portfolio-proof-row>div:nth-child(2){border-right:0}
+  .portfolio-proof-row>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .contact-form-card{margin-top:30px}
+}
+@media(max-width:767px){
+  #colorlib-about,#colorlib-services,#colorlib-work,#colorlib-blog,#colorlib-contact{
+    padding:68px 0!important;
+  }
+  .container{
+    width:100%!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+  .bold{font-size:52px!important}
+  .intro-heading h2{font-size:28px!important}
+  .portfolio-proof-row{grid-template-columns:1fr 1fr}
+  .portfolio-proof-row>div{
+    padding:14px 15px;
+  }
+  .portfolio-proof-row strong{font-size:17px}
+  .portfolio-proof-row span{font-size:8px}
+  .contact-form-card{padding:24px 18px!important}
+  .modern-submit-btn{width:100%}
+}
+@media(max-width:480px){
+  .portfolio-proof-row{grid-template-columns:1fr}
+  .portfolio-proof-row>div{
+    border-right:0!important;
+    border-bottom:1px solid var(--line)!important;
+  }
+  .portfolio-proof-row>div:last-child{border-bottom:0!important}
+  .bold{font-size:42px!important}
+  .intro-heading h2{font-size:25px!important}
+}
+/* =========================================================
+   MODERN ABOUT SECTION
+========================================================= */
+
+#colorlib-about.modern-about {
+    position: relative;
+    padding: 100px 0 110px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+/* Soft background glow */
+
+#colorlib-about.modern-about:before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -250px;
+    top: 80px;
+    border-radius: 50%;
+    background: rgba(44,152,240,.055);
+    filter: blur(2px);
+    animation: aboutGlow 6s ease-in-out infinite;
+}
+
+#colorlib-about.modern-about:after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: -150px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: rgba(44,152,240,.045);
+    animation: aboutGlow 7s ease-in-out infinite reverse;
+}
+
+@keyframes aboutGlow {
+    0%,100% {
+        transform: scale(1) translate(0,0);
+    }
+
+    50% {
+        transform: scale(1.15) translate(20px,-15px);
+    }
+}
+
+
+/* Main layout */
+
+.about-modern-wrapper {
+    position: relative;
+    z-index: 2;
     display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensure each item occupies full height */
-    background: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.certificate-logo {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.certificate-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    align-items: center;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
-.certificate-details {
-    flex: 1; /* Allow the details section to expand */
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.about-photo-column {
+    width: 45%;
+    position: relative;
 }
 
-.certificate-details h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.about-photo-wrap {
+    position: relative;
+    width: 430px;
+    height: 520px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.certificate-details p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+
+/* Image glow */
+
+.about-photo-glow {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: rgba(44,152,240,.16);
+    filter: blur(35px);
+    animation: photoGlow 4s ease-in-out infinite;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    background-color: #337ab7;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+@keyframes photoGlow {
+
+    0%,100% {
+        transform: scale(.92);
+        opacity: .55;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: .9;
+    }
 }
 
-.btn:hover {
-    background-color: #286090;
+
+/* Image */
+
+.about-photo-card {
+    position: relative;
+    z-index: 5;
+    width: 350px;
+    height: 440px;
+    padding: 9px;
+    background: rgba(255,255,255,.75);
+    border: 1px solid rgba(44,152,240,.18);
+    border-radius: 30px;
+    box-shadow:
+        0 35px 80px rgba(0,0,0,.16),
+        0 0 0 10px rgba(44,152,240,.025);
+    animation: photoFloat 5s ease-in-out infinite;
 }
 
-.btn.btn-primary {
-    background-color: #337ab7;
-}
-
-.btn.btn-primary:hover {
-    background-color: #286090;
-}
-/* Existing styles */
-
-/* Fixed Header Style */
-.fixed-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+.about-photo-card img {
     width: 100%;
-   
-}
-
-/* Hamburger Menu Icon Style */
-.colorlib-nav-toggle {
-    position: fixed;
-    top: 20px; /* Adjust according to your design */
-    right: 20px; /* Adjust according to your design */
-    z-index: 1001; /* Ensure it stays above other elements */
-    font-size: 24px; /* Adjust icon size as needed */
-    cursor: pointer;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 23px;
+    display: block;
 }
 
 
+@keyframes photoFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
 
 
-	</style>
-	<body>
+/* Rotating circles */
 
-	<nav id="colorlib-main-nav" role="navigation">
-		
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-		<div class="js-fullheight colorlib-table">
-			<div class="colorlib-table-cell js-fullheight">
-				
-				<div class="row">
-					<div class="col-md-12">
-						<ul>
-							<li class="active"><a href="#">Home</a></li>
-                            <li><a href="skills.html">Skills</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="certificates.html">Certificates</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
-	<header class="fixed-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-	
-	<div id="colorlib-page">
-		
-		<div id="colorlib-about">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">About</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-5 animate-box">
-						<div class="item">
-							<img class="img-responsive about-img" src="images/Bincy.jpg" alt="html5 bootstrap template by colorlib.com">
-						</div>
-					</div>
-				
-					<div class="col-md-6 col-md-push-1 animate-box">
-						<div class="about-desc">
-							<div class="owl-carousel3">
-								<div class="item">
-									<h2><span>Bincy</span><span>Biju</span></h2>
-								</div>
-								<div class="item">
-									<h2><span>I'm</span><span>A Software Developer</span></h2>
-								</div>
-							</div>
-							<div class="desc">
-								<div class="rotate">
-									<h2 class="heading">About</h2>
-								</div>
+.about-orbit {
+    position: absolute;
+    border: 1px dashed rgba(44,152,240,.25);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.orbit-one {
+    width: 410px;
+    height: 410px;
+    animation: rotateOrbit 18s linear infinite;
+}
+
+.orbit-two {
+    width: 470px;
+    height: 470px;
+    border-color: rgba(44,152,240,.12);
+    animation: rotateOrbitReverse 25s linear infinite;
+}
+
+@keyframes rotateOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateOrbitReverse {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Floating badges */
+
+.floating-badge {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 16px;
+    background: rgba(255,255,255,.95);
+    border: 1px solid rgba(44,152,240,.15);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.10);
+    color: #424a52;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.floating-badge i {
+    color: var(--primary);
+    font-size: 17px;
+}
+
+.badge-top {
+    top: 75px;
+    right: -5px;
+    animation: badgeFloat 4s ease-in-out infinite;
+}
+
+.badge-bottom {
+    bottom: 75px;
+    left: -10px;
+    animation: badgeFloat 4.5s ease-in-out infinite reverse;
+}
+
+@keyframes badgeFloat {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.about-content-column {
+    width: 55%;
+    padding-left: 35px;
+}
+
+.about-desc-modern {
+    position: relative;
+}
+
+
+/* =========================================================
+   NAME / ROLE CAROUSEL
+========================================================= */
+
+.modern-name-carousel {
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+
+/*
+   IMPORTANT:
+   The carousel itself is NOT changed.
+   Bincy Biju -> I'm A Software Developer
+   continues using owl-carousel3.
+*/
+
+.modern-name-carousel .item {
+    padding: 15px 0 18px;
+    min-height: 155px;
+}
+
+
+/* Name */
+
+.hero-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: .95;
+}
+
+
+/* Bincy */
+
+.name-first {
+    display: block;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    color: #20262c;
+    animation: nameReveal .7s ease both;
+}
+
+
+/* Biju */
+
+.name-last {
+    display: block;
+    margin-top: 4px;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    color: var(--primary);
+    animation: nameReveal .85s ease both;
+}
+
+
+/* I'm */
+
+.name-small {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #777f87;
+}
+
+
+/* Software Developer */
+
+.name-role {
+    display: block;
+    font-size: 52px;
+    line-height: 1.05;
+    font-weight: 750;
+    letter-spacing: -2px;
+    color: #20262c;
+    max-width: 650px;
+    animation: roleReveal .7s ease both;
+}
+
+
+@keyframes nameReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes roleReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(55px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   ABOUT HEADING
+========================================================= */
+
+.about-section-line {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+
+.about-section-line span {
+    display: block;
+    width: 42px;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--primary);
+}
+
+.about-section-line h2 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-description {
+    max-width: 650px;
+}
+
+.about-description p {
+    margin: 0 0 12px;
+    color: #707981;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.modern-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.modern-social a {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #f6f9fc;
+    border: 1px solid #e5ebf1;
+    color: #59636c;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.modern-social a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    transform: translateY(-6px) rotate(-3deg);
+    box-shadow: 0 10px 25px rgba(44,152,240,.25);
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.modern-about-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.modern-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 20px;
+    border-radius: 9px;
+    text-decoration: none !important;
+    font-size: 11px;
+    font-weight: 600;
+    transition: .35s;
+}
+
+.modern-btn i {
+    transition: .3s;
+}
+
+.modern-btn:hover i {
+    transform: translateX(5px);
+}
+
+.primary-btn {
+    color: #fff !important;
+    background: var(--primary);
+    box-shadow: 0 10px 25px rgba(44,152,240,.2);
+}
+
+.primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(44,152,240,.3);
+}
+
+.secondary-btn {
+    color: #454c53 !important;
+    background: #fff;
+    border: 1px solid #e1e7ed;
+}
+
+.secondary-btn:hover {
+    color: var(--primary) !important;
+    border-color: var(--primary);
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991px) {
+
+    #colorlib-about.modern-about {
+        padding: 75px 0 80px;
+    }
+
+    .about-modern-wrapper {
+        display: block;
+    }
+
+    .about-photo-column,
+    .about-content-column {
+        width: 100%;
+    }
+
+    .about-photo-column {
+        margin-bottom: 60px;
+    }
+
+    .about-content-column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-photo-wrap {
+        height: 480px;
+    }
+
+    .name-first,
+    .name-last {
+        font-size: 64px;
+    }
+
+    .name-role {
+        font-size: 44px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767px) {
+
+    #colorlib-about.modern-about {
+        padding: 55px 0 65px;
+    }
+
+    .about-photo-wrap {
+        width: 300px;
+        height: 400px;
+    }
+
+    .about-photo-card {
+        width: 270px;
+        height: 340px;
+    }
+
+    .orbit-one {
+        width: 310px;
+        height: 310px;
+    }
+
+    .orbit-two {
+        width: 350px;
+        height: 350px;
+    }
+
+    .badge-top {
+        right: -5px;
+        top: 45px;
+    }
+
+    .badge-bottom {
+        left: -5px;
+        bottom: 45px;
+    }
+
+    .name-first,
+    .name-last {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .name-small {
+        font-size: 27px;
+    }
+
+    .name-role {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .modern-name-carousel .item {
+        min-height: 125px;
+    }
+
+    .about-description p {
+        font-size: 13px;
+    }
+
+    .modern-about-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .modern-btn {
+        justify-content: center;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div id="colorlib-page">
+
+
+<div id="colorlib-about" class="modern-about">
+    <div class="container">
+
+        <!-- Background heading -->
+        <div class="row text-center">
+            <h2 class="bold">About</h2>
+        </div>
+
+        <div class="about-modern-wrapper">
+
+            <!-- LEFT: PHOTO -->
+            <div class="about-photo-column animate-box">
+                <div class="about-photo-wrap">
+
+                    <div class="about-orbit orbit-one"></div>
+                    <div class="about-orbit orbit-two"></div>
+
+                    <div class="about-photo-glow"></div>
+
+                    <div class="about-photo-card">
+                        <img
+                            src="images/Bincy.jpg"
+                            alt="Bincy Biju"
+                            class="about-img"
+                        />
+                    </div>
+
+                    <div class="floating-badge badge-top">
+                        <i class="icon-code"></i>
+                        <span>.NET Developer</span>
+                    </div>
+
+                    <div class="floating-badge badge-bottom">
+                        <i class="icon-star"></i>
+                        <span>Software Engineer</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- RIGHT: CONTENT -->
+            <div class="about-content-column animate-box">
+
+                <div class="about-desc-modern">
+
+                    <!-- KEEP THIS CAROUSEL MOVEMENT -->
+                    <div class="owl-carousel3 modern-name-carousel">
+
+                        <!-- SLIDE 1 -->
+                        <div class="item">
+                            <div class="hero-name">
+                                <span class="name-first">BINCY BIJU</span>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+                        <div class="item">
+                            <div class="hero-name">
+                                <span class="name-small">I'm</span>
+                                <span class="name-role">A Software Developer</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ABOUT LABEL -->
+                    <div class="about-section-line">
+                        <span></span>
+                        <h2>ABOUT ME</h2>
+                    </div>
+
+
+                    <!-- DESCRIPTION -->
+                    <div class="about-description">
+                        <p>
+                            I’m a passionate .NET Developer who enjoys turning complex
+                            business requirements into reliable, scalable, and
+                            user-focused software solutions.
+                        </p>
+
+                        <p>
+                            With hands-on experience in C#, ASP.NET Core, Web API,
+                            Entity Framework Core, and SQL Server, I build modern
+                            enterprise applications with a strong focus on clean code,
+                            performance, security, and maintainability.
+                        </p>
+
+                        <p>
+                            I’m particularly experienced in developing business-critical
+                            systems, API integrations, and workflow-driven applications.
+                        </p>
+                    </div>
+
+
+                    <!-- SOCIAL -->
+                    <div class="modern-social">
+
+                        <a href="https://www.linkedin.com/in/bincy-biju-8278351a9"
+                           target="_blank"
+                           aria-label="LinkedIn">
+                            <i class="icon-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/Bincybiju"
+                           target="_blank"
+                           aria-label="GitHub">
+                            <i class="icon-github"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/bin_c_y_?igsh=Ym03djdpdTZjZGVq"
+                           target="_blank"
+                           aria-label="Instagram">
+                            <i class="icon-instagram"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+                    <div class="modern-about-buttons">
+
+                        <a class="modern-btn primary-btn"
+                           href="https://drive.google.com/file/d/12TKrG7a5L7JK2-Gx3yMRjXhsJ-N1BKp7/view?usp=drivesdk"
+                           target="_blank">
+
+                           <span style="color: white;">Download Resume</span>
+<i class="icon-arrow-right"></i>
+
+                        </a>
+
+                        <a class="modern-btn secondary-btn"
+                           href="#colorlib-contact">
+
+                            <span>Contact Me</span>
+                            <i class="icon-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div id="colorlib-services">
+<div class="container">
+<div class="row text-center">
+<h2 class="bold">Skills</h2>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="row text-center">
+<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+<span>My Skills</span>
+<h2>Here Are Some of My Skills</h2>
+</div>
+</div>
+<div class="row g-4">
+<!-- .NET -->
+<div class="col-lg-6 col-md-6">
+<div class="tech-card">
+<div class="tech-card-header">
+<div class="tech-icon">
+<span>.NET</span>
+</div>
+<div>
+<h4>Backend Development</h4>
+<p>Building scalable enterprise applications</p>
+</div>
+</div>
+<div class="tech-list">
+<span>C#</span>
+<span>ASP.NET Core</span>
+<span>ASP.NET MVC</span>
+<span>Web API</span>
+<span>Entity Framework Core</span>
+<span>LINQ</span>
+<span>REST APIs</span>
+<span>Microservices</span>
+</div>
+</div>
+</div>
+<!-- Database -->
+<div class="col-lg-6 col-md-6">
+<div class="tech-card">
+<div class="tech-card-header">
+<div class="tech-icon database-icon">
+<i class="icon-database"></i>
+</div>
+<div>
+<h4>Database</h4>
+<p>Data modelling and performance optimization</p>
+</div>
+</div>
+<div class="tech-list">
+<span>SQL Server</span>
+<span>MySQL</span>
+<span>SQL</span>
+<span>Stored Procedures</span>
+<span>EF Core Migrations</span>
+<span>Query Optimization</span>
+</div>
+</div>
+</div>
+<!-- Frontend -->
+<div class="col-lg-6 col-md-6">
+<div class="tech-card">
+<div class="tech-card-header">
+<div class="tech-icon frontend-icon">
+<i class="icon-layout"></i>
+</div>
+<div>
+<h4>Frontend Development</h4>
+<p>Responsive and interactive interfaces</p>
+</div>
+</div>
+<div class="tech-list">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>jQuery</span>
+<span>AJAX</span>
+<span>Bootstrap</span>
+</div>
+</div>
+</div>
+<!-- Tools -->
+<div class="col-lg-6 col-md-6">
+<div class="tech-card">
+<div class="tech-card-header">
+<div class="tech-icon tools-icon">
+<i class="icon-settings"></i>
+</div>
+<div>
+<h4>Tools &amp; Practices</h4>
+<p>Development, testing and collaboration</p>
+</div>
+</div>
+<div class="tech-list">
+<span>Visual Studio</span>
+<span>VS Code</span>
+<span>GitHub</span>
+<span>Postman</span>
+<span>SSMS</span>
+<span>SDLC</span>
+<span>Agile</span>
+<span>Unit Testing</span>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+
+<!-- ==================== CERTIFICATIONS ==================== -->
+<div id="colorlib-blog">
+
+    <div class="container">
+
+        <!-- Background Section Title -->
+        <div class="row text-center">
+            <h2 class="bold">Certifications</h2>
+        </div>
+
+        <!-- Main Section Heading -->
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+
+                <span>Certifications</span>
+
+                <h2>Certifications</h2>
+
+                <p class="certificate-intro">
+                    Professional certifications and training that complement
+                    my software development experience.
+                </p>
+<br>
+            </div>
+        </div>
+
+        <!-- Side Rotated Heading -->
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="rotate">
+                    <h2 class="heading">Certifications</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="row animate-box">
+
+            <div class="owl-carousel1">
+
+                <!-- Certificate 1 -->
+                <div class="item">
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-logo">
+                            <img
+                                src="images/ii.png"
+                                alt="Certificate in IT"
+                                class="certificate-img">
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <span class="certificate-label">
+                                CERTIFICATION
+                            </span>
+
+                            <h3>Certificate in IT</h3>
+
+                            <p class="certificate-provider">
+                                IGNOU
+                            </p>
+
+                            <div class="certificate-footer">
+
+                                <span class="certificate-type">
+                                    <i class="icon-award"></i>
+                                    Professional Certificate
+                                </span>
+
+                               
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Certificate 2 -->
+                <div class="item">
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-logo">
+                            <img
+                                src="images/quest.png"
+                                alt="Python Full Stack Developer"
+                                class="certificate-img">
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <span class="certificate-label">
+                                CERTIFICATION
+                            </span>
+
+                            <h3>Python Full Stack Developer</h3>
+
+                            <p class="certificate-provider">
+                                Quest Innovative Solutions
+                            </p>
+
+                            <div class="certificate-footer">
+
+                                <span class="certificate-type">
+                                    <i class="icon-award"></i>
+                                    Professional Certificate
+                                </span>
+
+                               
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Certificate 3 -->
+                <div class="item">
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-logo">
+                            <img
+                                src="images/nptel.jpeg"
+                                alt="Programming in Java"
+                                class="certificate-img">
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <span class="certificate-label">
+                                CERTIFICATION
+                            </span>
+
+                            <h3>Programming in Java</h3>
+
+                            <p class="certificate-provider">
+                                IIT Kharagpur · NPTEL
+                            </p>
+
+                            <div class="certificate-footer">
+
+                                <span class="certificate-type">
+                                    <i class="icon-award"></i>
+                                    NPTEL Certification
+                                </span>
+
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Certificate 4 -->
+                <div class="item">
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-logo">
+                            <img
+                                src="images/nptel.jpeg"
+                                alt="Introduction to Operating Systems"
+                                class="certificate-img">
+                        </div>
+
+                        <div class="certificate-content">
+
+                            <span class="certificate-label">
+                                CERTIFICATION
+                            </span>
+
+                            <h3>Introduction to Operating Systems</h3>
+
+                            <p class="certificate-provider">
+                                IIT Madras · NPTEL
+                            </p>
+
+                            <div class="certificate-footer">
+
+                                <span class="certificate-type">
+                                    <i class="icon-award"></i>
+                                    NPTEL Certification
+                                </span>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==================== END CERTIFICATIONS ==================== -->
+</div>
+<div id="colorlib-work">
+<div class="container">
+<!-- Section Heading -->
+<div class="row text-center">
+<h2 class="bold">Projects</h2>
+</div>
+<div class="row">
+<div class="col-md-12 text-center animate-box intro-heading">
+<h2>Featured Projects</h2>
+<p class="project-intro">
+                    Enterprise applications and business solutions built using
+                    modern .NET technologies.
+                </p>
+</div>
+</div>
+<!-- =========================================
+             PROJECT 1 - AML & KYC
+        ========================================== -->
+<div class="row project-row animate-box">
+<div class="col-md-5">
+<div class="project-image project-kyc">
+<div class="project-image-overlay">
+<span>01</span>
+<h3>AML &amp; KYC</h3>
+</div>
+</div>
+</div>
+<div class="col-md-7">
+<div class="project-content">
+<div class="project-number">
+                        PROJECT 01
+                    </div>
+<h2>AML &amp; KYC Customer Onboarding System</h2>
+<p class="project-description">
+                        An enterprise customer onboarding platform designed
+                        to support AML and KYC compliance workflows, customer
+                        verification, screening, risk assessment and document
+                        management.
+                    </p>
+<div class="project-tech">
+<span>ASP.NET Core</span>
+<span>C#</span>
+<span>Web API</span>
+<span>Entity Framework Core</span>
+<span>SQL Server</span>
+<span>JavaScript</span>
+<span>jQuery</span>
+<span>Bootstrap</span>
+<span>REST APIs</span>
+</div>
+<div class="project-highlights">
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>CDD &amp; EDD workflows</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Sanctions &amp; PEP screening</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Adverse media monitoring</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Corporate &amp; UBO management</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>RESTful API development</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Customer risk assessment</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- =========================================
+             PROJECT 2 - CUSTOMER MANAGEMENT
+        ========================================== -->
+<div class="row project-row project-row-reverse animate-box">
+<div class="col-md-5 col-md-push-7">
+<div class="project-image project-customer">
+<div class="project-image-overlay">
+<span>02</span>
+<h3>Customer Management</h3>
+</div>
+</div>
+</div>
+<div class="col-md-7 col-md-pull-5">
+<div class="project-content">
+<div class="project-number">
+                        PROJECT 02
+                    </div>
+<h2>Enterprise Customer Management System</h2>
+<p class="project-description">
+                        An enterprise web application for managing individual
+                        and corporate customer information, business workflows,
+                        customer relationships and authorized entities.
+                    </p>
+<div class="project-tech">
+<span>ASP.NET MVC</span>
+<span>C#</span>
+<span>Entity Framework</span>
+<span>SQL Server</span>
+<span>JavaScript</span>
+<span>jQuery</span>
+<span>AJAX</span>
+<span>Bootstrap</span>
+</div>
+<div class="project-highlights">
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Individual &amp; corporate customers</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Customer profile management</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Partner &amp; shareholder management</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>UBO &amp; authorised signatories</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>Role-based access control</span>
+</div>
+<div class="highlight-item">
+<i class="icon-check"></i>
+<span>SQL Server optimization</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+
+<div id="colorlib-contact">
+<div class="container">
+<!-- Section Heading -->
+<div class="row text-center">
+<h2 class="bold">Contact</h2>
+</div>
+<div class="row">
+<div class="col-md-12 text-center animate-box intro-heading">
+<span>Get In Touch</span>
+<h2>Let's Work Together</h2>
+<p class="contact-intro">
+                    Have a project, opportunity, or simply want to connect?
+                    Feel free to get in touch with me.
+                </p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="rotate">
+<h2 class="heading">Contact</h2>
+</div>
+</div>
+</div>
+<div class="row contact-wrapper">
+<!-- LEFT SIDE -->
+<div class="col-md-4 animate-box">
+<div class="contact-card">
+<div class="contact-card-icon">
+<i class="icon-phone4"></i>
+</div>
+<div class="contact-card-content">
+<span>Phone</span>
+<a href="tel:+917559816650">
+                            +91 7559816650
+                        </a>
+</div>
+</div>
+<div class="contact-card">
+<div class="contact-card-icon">
+<i class="icon-envelope2"></i>
+</div>
+<div class="contact-card-content">
+<span>Email</span>
+<a href="mailto:bincybijumaravoor@gmail.com">
+                            bincybijumaravoor@gmail.com
+                        </a>
+</div>
+</div>
+<!-- LinkedIn -->
+<div class="contact-card">
+<div class="contact-card-icon">
+<i class="icon-linkedin"></i>
+</div>
+<div class="contact-card-content">
+<span>LinkedIn</span>
+<a href="https://www.linkedin.com/in/bincy-biju-8278351a9" target="_blank">
+                            Connect with me
+                        </a>
+</div>
+</div>
+<div class="contact-availability">
+<span class="availability-dot"></span>
+<div>
+<strong>Available for opportunities</strong>
 <p>
-	I'm a dynamic Full Stack Developer with a strong foundation in Python and .NET technologies. Skilled in Python, Django, HTML, CSS, Bootstrap, JavaScript, and Rest APIs, I excel in crafting robust backend solutions and intuitive frontend interfaces. Additionally, proficient in C#, ASP.NET, I specialize in developing secure and scalable applications.</p>								<p class="colorlib-social-icons">
-									<a href="https://www.linkedin.com/in/bincy-biju-8278351a9" target="blank"><i class="icon-linkedin"></i></a>
-									<a href="https://github.com/Bincybiju" target="blank"><i class="icon-github" ></i></a>
-									<a href="https://www.instagram.com/bin_c_y_?igsh=Ym03djdpdTZjZGVq" target="blank"><i class="icon-instagram"></i></a>
+                            Open to software development opportunities
+                            and professional collaborations.
+                        </p>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE -->
+<div class="col-md-7 col-md-push-1 animate-box">
+<div class="contact-form-card">
+<div class="contact-form-header">
+<span>CONTACT ME</span>
+<h3>Send Me a Message</h3>
+<p>
+                            Fill out the form below and I'll get back to you
+                            as soon as possible.
+                        </p>
+</div>
+<form action="http://localhost:5000/contact_process" class="contact_form" id="contactForm" method="post" novalidate="novalidate">
+<div class="row">
+<div class="col-md-6">
+<div class="modern-form-group">
+<label for="name">Your Name</label>
+<input class="modern-form-control" id="name" name="name" placeholder="Enter your name" required="" type="text"/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="modern-form-group">
+<label for="email">Email Address</label>
+<input class="modern-form-control" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+</div>
+<div class="col-md-12">
+<div class="modern-form-group">
+<label for="subject">Subject</label>
+<input class="modern-form-control" id="subject" name="subject" placeholder="What would you like to discuss?" required="" type="text"/>
+</div>
+</div>
+<div class="col-md-12">
+<div class="modern-form-group">
+<label for="message">Message</label>
+<textarea class="modern-form-control modern-textarea" id="message" name="message" placeholder="Write your message here..." required="" rows="6"></textarea>
+</div>
+</div>
+<div class="col-md-12">
+<button class="modern-submit-btn" type="submit" value="submit">
+<span style="color: white;">Send Message</span>
 
-									
-								</p>
-								<p><a href="https://drive.google.com/file/d/1-sqKRjNzI2YuWsd5_OLlJhW8QedtERsC/view?usp=drivesdk" class="btn btn-primary btn-outline" target="blank">Download Resume</a>
+<i class="icon-arrow-right"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-								<a href="contact.html" class="btn btn-primary btn-outline">Contact Me!</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="colorlib-services">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Skills</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="row text-center">
-							<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-								<span>My Skills</span>
-								<h2>Here Are Some of My Skills</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="rotate">
-									<h2 class="heading">Skills</h2>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services animate-box">
-									<h3>1 - Frontend</h3>
-									<ul>
-										<li>HTML</li>
-										<li>CSS</li>
-										<li>JavaScript</li>
-										<li>Bootstrap</li>
-										<li>Angular</li>
-										<li>ASP.NET</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services animate-box">
-									<h3>2 - Backend</h3>
-									<ul>
-										<li>Python</li>
-										<li>Django</li>
-										<li>MySQL</li>
-										<li>SSMS</li>
-										<li>Flask</li>
-										<li>C#</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="services animate-box">
-									<h3>3 - Other</h3>
-									<ul>
-										<li>GitHub</li>
-										<li>VS Code</li>
-										<li>Postman</li>
-										<li>Filezilla</li>
-										<li>Visual Studio 2022</li>
-									</ul>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
 
-		<div id="colorlib-work">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Works</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<h2>Done Projects</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="rotate">
-							<h2 class="heading">Projects</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/images.jpeg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Saadiyat Auditing</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Saadiyat Accounting is the leading accounting and audit firm providing audit, accounting, tax and consulting services that help solve our client's toughest challenges and build a better working world for all.</p>
-									<p><b>Technologies used:</b> HTML, CSS, JavaScript, Bootstrap, ASP.NET, C#, and SSMS.</p>
-									<p class="read"><a href="http://saadiyatauditing.com" class="custom-primary" target="_blank">View Website</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/church.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Sharon Church</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Sharon Pentecostal Church was founded by Rev. P.J. Thomas in Kerala, India, during the early 1950s. The church expanded internationally, establishing its UK presence in 2006. Sharon Pentecostal Church UK (SFCUK) aims to fulfill the Great Commission through evangelism, church planting, missionary work, and charitable activities. grow, with affiliated churches across the United States.</p>
-									<p><b>Technologies used:</b> HTML, CSS, JavaScript, Bootstrap, ASP.NET, C#, and SSMS.</p>
-									<p class="read"><a href="http://sharonchurch.nz" class="custom-primary" target="_blank">View Website</a></p>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					<!-- <div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-3.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Cristall</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-4.jpg);">
-								<div class="display-t">
-									<div class="work-name">
-										<h2>Black</h2>
-									</div>
-								</div>
-							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
-								</div>
-							</div>
-						</div>
-					</div> -->
-				</div>
-			</div>
-		</div>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Main JS (Do not remove) -->
+<script src="js/main.js"></script>
+<script>
+$(document).ready(function () {
 
-		<div id="colorlib-blog">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Certificates</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="row text-center">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Certificates</span>
-						<h2>My Certificates</h2>
+    $('.colorlib-nav a[href^="#"]').on('click', function (e) {
 
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="owl-carousel1">
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article certificate-item">
-									<div class="certificate-logo">
-										<img src="images/ii.png" alt="Certificate Logo 1" class="certificate-img">
-									</div>
-									<div class="certificate-details">
-										<h2><a href="#">Certificate in IT</a></h2>
-										<p>IGNOU</p>
-										<a href="#" class="btn btn-primary">View Certificate</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article certificate-item">
-									<div class="certificate-logo">
-										<img src="images/quest.png" alt="Certificate Logo 2" class="certificate-img">
-									</div>
-									<div class="certificate-details">
-										<h2><a href="#">Python Full Stack Developer</a></h2>
-										<p>Quest Innovative solutions</p>
-										<a href="#" class="btn btn-primary">View Certificate</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article certificate-item">
-									<div class="certificate-logo">
-										<img src="images/nptel.jpeg" alt="Certificate Logo 2" class="certificate-img">
-									</div>
-									<div class="certificate-details">
-										<h2><a href="#">Programming in java</a></h2>
-										<p>IIT Kharagpur</p>
-										<a href="https://drive.google.com/file/d/1-yMNJZYHQGU2LzSXylaoYK5gQOd_fen8/view?usp=drivesdk" class="btn btn-primary" target="blank">View Certificate</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Add more items as needed -->
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		
-		<div id="colorlib-page">
-			
-			
-			<div id="colorlib-contact">
-				<div class="container">
-					<div class="row text-center">
-						<h2 class="bold">Contact</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-							<span>Contact</span>
-							<h2>Contact Me</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="rotate">
-								<h2 class="heading">Contact</h2>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 col-md-offset-0">
-							<div class="row">
-								<div class="col-md-4 animate-box">
-									<ul class="contact-info">
-										<li><span><i class="icon-phone4"></i></span>+91 7559816650</li>
-										<li><span><i class="icon-envelope2"></i></span><a href="#">bincybijumaravoor@gmail.com</a></li>
-									</ul>
-								</div>
-								<div class="col-md-7 col-md-push-1 animate-box">
-									<div class="row">
-										<form class="row contact_form" action="http://localhost:5000/contact_process" method="post" id="contactForm" novalidate="novalidate">
-											<div class="col-md-6">
-												<div class="form-group">
-													<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-												</div>
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
-												</div>
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" required>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group">
-													<textarea class="form-control" name="message" id="message" rows="7" cols="30" placeholder="Enter Message" required></textarea>
-												</div>
-											</div>
-											<div class="col-md-12 text-right">
-												<button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				
-			</div>
-			
-			
-		
-		</div>
-		
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+        var target = $(this).attr('href');
 
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
-	<center>
-		&copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Bincy Biju</a>
-   </center>
-	</body>
+        if (target === '#' || !$(target).length) {
+            return;
+        }
+
+        e.preventDefault();
+
+        var targetPosition = $(target).offset().top - 70;
+
+        // Close mobile menu
+        $('body').removeClass('offcanvas');
+        $('body').removeClass('menu-show');
+        $('.colorlib-nav-toggle').removeClass('active');
+        $('#colorlib-main-nav').removeClass('show');
+        $('#colorlib-main-nav').removeClass('active');
+
+        // Hide overlay if Colorlib created one
+        $('.colorlib-nav-overlay').remove();
+
+        // Scroll after menu closes
+        setTimeout(function () {
+            $('html, body').stop(true, true).animate({
+                scrollTop: targetPosition
+            }, 700);
+        }, 300);
+
+    });
+
+});
+</script>
+<center class="portfolio-footer">
+		©<script>document.write(new Date().getFullYear());</script> All rights reserved | Bincy Biju
+</center>
+<script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll('#colorlib-main-nav a[href^="#"]').forEach(function(a){a.addEventListener("click",function(){var t=document.querySelector(a.getAttribute("href"));if(t){t.scrollIntoView({behavior:"smooth"});var n=document.getElementById("colorlib-main-nav");if(n){n.classList.remove("show");}}});});});</script>
+</body>
 </html>
-
